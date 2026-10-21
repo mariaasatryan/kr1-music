@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Паспорт и работа с DOM-деревом</title>
+</head>
+<body>
+  <nav style="display: flex; align-items: center; gap: 10px; justify-content: center;">
+    <a href="index.html#top" target="_self"><img src="img/logo.png" alt="Лого" width="48"></a>
+    <a href="index.html#top" target="_self">Главная</a> |
+    <a href="index.html#mytop" target="_self">МойТоп</a> |
+    <a href="popular.html" target="_self">Классика</a> |
+    <a href="trendy.html" target="_self">Тренды</a> |
+    <a href="niche.html" target="_self">Нишевые</a> |
+    <a href="friends.html" target="_self">Друзья</a> |
+    <a href="forms.html" target="_self">Связь</a> |
+    <b><a href="passport.html" target="_self">Паспорт</a></b> |
+    <a href="task.html" target="_self">Задача</a> |
+    <a href="https://open.spotify.com" target="_blank" style="background-color: rgb(30, 215, 96); color:beige; padding: 2px 2px;">Spotify</a>  
+  </nav>
+  <hr>
+
+  <h1 style="text-align: center;">Паспорт и перевод на латиницу</h1>
+  <table id="passport-table" border="0" cell-padding="20" style="border-collapse: collapse; margin: 0 auto; text-align: center;"  width="60%">
+    <tr>
+      <td rowspan="5"><a href="passport.html" target="_self"><img style="align-items: start;" src="img/passport.png" alt="Фото на паспорт" width="200"></a></td>  
+      <td colspan="3">Кем выдан: <span id="issued-by">ГУ МВД РОССИИ ПО Г. МОСКВЕ</span></td>
+    </tr>
+    <tr>
+      <td>Дата выдачи: <span>11.11.2011</span></td>
+      <td colspan="2">Код подразделения: <span>770-777</span></td>
+    </tr>
+    <tr>
+      <td>Фамилия: <span id="surname">Асатрян</span></td>
+      <td>Имя: <span id="name">Мария</span></td>
+      <td>Отчество: <span id="fathersname">Кареновна</span></td>
+    </tr>
+    <tr>
+      <td>Пол: <span id="gender">Женский</span></td>
+      <td>Дата рождения: <span>25.04.2007</span></td>
+      <td>Место рождения: <span id="birth-place">г. Москва</span></td>
+    </tr>
+    <tr>
+      <td>Серия паспорта: <span>1122</span></td>
+      <td colspan="2">Номер паспорта: <span>333444</span></td>
+    </tr>
+  </table>
+  <p style="text-align: center;"><button id="translit-button" style="display: inline-block; padding: 8px 18px; 
+  background: rgb(111, 60, 179); color: beige; border-radius: 20px; cursor: pointer;">Перевод на латиницу</button></p>
+
+  <br>
+  <h1 style="text-align: center;">Работа с DOM-деревом</h1>
+  <p style="text-align: center;">Получение фамилии, имени и года рождения с помощью метода document.getElementsByTagName()</p>
+  <img src="img/dom.png" alt="Получение информации с помощью DOM-дерева" width="800" style="display: block; margin: 0 auto;">
+  <br>
+
+  <script src="latin.js"></script>
+</body>
+</html>

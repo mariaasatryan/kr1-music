@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Решение алгоритмической задачи</title>
+</head>
+<body>
+  <nav style="display: flex; align-items: center; gap: 10px; justify-content: center;">
+    <a href="index.html#top" target="_self"><img src="img/logo.png" alt="Лого" width="48"></a>
+    <a href="index.html#top" target="_self">Главная</a> |
+    <a href="index.html#mytop" target="_self">МойТоп</a> |
+    <a href="popular.html" target="_self">Классика</a> |
+    <a href="trendy.html" target="_self">Тренды</a> |
+    <a href="niche.html" target="_self">Нишевые</a> |
+    <a href="friends.html" target="_self">Друзья</a> |
+    <a href="forms.html" target="_self">Связь</a> |
+    <a href="passport.html" target="_self">Паспорт</a> |
+    <b><a href="task.html" target="_self">Задача</a></b> |
+    <a href="https://open.spotify.com" target="_blank" style="background-color: rgb(30, 215, 96); color:beige; padding: 2px 2px;">Spotify</a>  
+  </nav>
+  <hr>
+  <h1>Решение алгоритмической задачи №1002</h1>
+  <form action="https://www.bing.com/search?" id="taskForm" target="_blank">
+    <input type="hidden" name="q" value="Задача 1002">
+    <p>Формулировка задачи:<br>
+      <textarea name="formulation" cols="60" rows="3" readonly>Дано вещественное число. Определить, какое это число: положительное, отрицательное, ноль.</textarea></p>
+    <p>Число x: <input type="number" step="any" id="x" name="x" value="-2.5"></p>
+    <p>Результат: <input id="result" name="result" value="не определён" size="40" readonly></p>
+    <p>
+      <input type="button" id="verify" value="Проверить">
+      <input type="button" id="send" value="Отправить">
+    </p>
+  </form>
+
+  <script src="task.js"></script>
+</body>
+</html>
